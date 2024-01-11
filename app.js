@@ -79,6 +79,11 @@ app.get('/logout', (req, res) => {
         res.redirect('/login');
     });
 });
+//home page route
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/login.html');
+});
+
 
 // Login page route
 app.get('/login', (req, res) => {
