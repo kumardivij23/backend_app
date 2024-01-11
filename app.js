@@ -81,7 +81,7 @@ app.get('/logout', (req, res) => {
 });
 //home page route
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/login.html');
+    res.sendFile(__dirname + '/public/home.html');
 });
 
 
